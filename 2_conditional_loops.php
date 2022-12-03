@@ -47,23 +47,65 @@ switch($color){
         print "404 !  Color is not found!!";
 } */
 
-$capital = "Dhaka";
+// $capital = "Dhaka";
 
-switch($capital){
-    case "Khulna":
-        echo "Khulna is not capital city .";
-        break;
-    case "Barisal":
-        echo "Barisal is not capital city . ";
-        break;
-    case "Rangpur":
-        echo "Dhaka is our capital city";
-        break;
-    default:
-        echo "Capital not found!";
+// switch($capital){
+//     case "Khulna":
+//         echo "Khulna is not capital city .";
+//         break;
+//     case "Barisal":
+//         echo "Barisal is not capital city . ";
+//         break;
+//     case "Rangpur":
+//         echo "Dhaka is our capital city";
+//         break;
+//     default:
+//         echo "Capital not found!";
 
+// }
+
+/* PHP LOOPS */ 
+
+// While Loops
+
+// $t_price = 0; \\
+
+// while($t_price <=100){
+//     echo "The ticket price is: $t_price <br/> ";
+//     $t_price++;
+// }
+
+// Do While Loop \\
+
+// do{
+//     echo" Ticket price : $t_price  <br/>";
+//     $t_price++;
+// }while($t_price<100 )
+
+
+// For Loop \\ 
+
+// for($t_price=0; $t_price <=50; $t_price++){
+//     echo "The amount of ticktet : $t_price <br/> ";
+// }
+
+// For Each Loop ( Key : Value)
+
+// $jhuri = ["Komla","Amloki","Pepe","Mango","Grapes"];
+
+// foreach($jhuri as $value){
+//     echo "$value <br/> ";
+// };
+
+$persons = array(
+    "Imtu"=> 15,
+    "Isht"=> 11,
+    "Hrid"=>22
+);
+
+foreach ($persons as $key => $value){
+    echo "Name : $key & Age: $value <br/>";
 }
-
 
 
 ?>

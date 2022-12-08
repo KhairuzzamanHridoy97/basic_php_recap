@@ -97,14 +97,27 @@ switch($color){
 //     echo "$value <br/> ";
 // };
 
-$persons = array(
-    "Imtu"=> 15,
-    "Isht"=> 11,
-    "Hrid"=>22
+// $persons = array(
+//     "Imtu"=> 15,
+//     "Isht"=> 11,
+//     "Hrid"=>22
+// );
+
+// foreach ($persons as $key => $value){
+//     echo "Name : $key & Age: $value <br/>";
+// }
+
+
+$player = array(
+    "Shakib"=> 75,
+    "Tamim"=> 10,
+    "Liton"=> 29,
+    "Mash" => 79,
+    "Taijul"=>37
 );
 
-foreach ($persons as $key => $value){
-    echo "Name : $key & Age: $value <br/>";
+foreach ($player as $key => $value){
+    print " Player Name: $key  & His jersey : $value <br/> ";
 }
 
 

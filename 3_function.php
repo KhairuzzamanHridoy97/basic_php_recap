@@ -84,13 +84,29 @@
     // print minusNumber(18,11);
 
 
-    // 8. Function With Reference Argument
+    // 8. Function With Reference Argument \\
 
-    function fiveCount(&$addFive){
-        $addFive +=5;
-    }
-    $countNumber = 26;
-    fiveCount($countNumber);
-    print($countNumber); //31
+    // function fiveCount(&$addFive){
+    //     $addFive +=5;
+    // }
+    // $countNumber = 26;
+    // fiveCount($countNumber);
+    // print($countNumber); //31
+
+
+    // FUNCTION  CALCULATOR \\
+
+    function calculator($method="sum",int $m,int $n){
+        if($method == "sum")
+        return $m+$n;
+        elseif($method== "sub")
+        return $m-$n;
+        elseif($method== "mul")
+        return $m*$n;
+        elseif ($method == "div")
+        return $m/$n;
+    };
+
+    print calculator("sub",30,11); //41
 
 ?>

@@ -17,16 +17,17 @@ class Cars {
     private $sceret_engine;
 
     /*constructor */
-    // function __construct($name, $color) {
-    //     $this->name = $name;
-    //     $this->color = $color;
-    // }
 
+    function __construct($name,$color){
+        $this->name=$name;
+        $this->color=$color;
+    }
+    
     /*destructor */
-    // function __destruct() {
-    //     echo "The cars is {$this->name} and the color is {$this->color}.";
-    // }
-
+    function __destruct()
+    {
+        print "This car name is $this->name and color is $this->color";
+    }
     /*Methods -- Set & Get */
 
     function set_name($brand_name){
@@ -44,10 +45,10 @@ class Cars {
     }
 }
 
-$new_car_object = new Cars();
+$new_car_object = new Cars('Mahindra','Green');
 print_r($new_car_object);
 
-echo '<br/>';
+echo '<br/>'; 
 
 // $new_car_object = new Cars("Toyota", "Blue");
 // print_r($new_car_object);
@@ -58,7 +59,7 @@ echo '<br/>';
 // $new_car_object->set_name('Toyota');
 // $new_car_object->set_color('Red');
 
-$new_car_object->set_color("Red");
+$new_car_object->set_color("Yellow");
 $new_car_object->set_name("Mahindra");
 print_r($new_car_object); 
 
